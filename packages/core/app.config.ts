@@ -1,8 +1,8 @@
 export default defineAppConfig({
   nav: true,
-  theme: 'ghost',
-  backgroundPattern: 'topography',
-  defaultLayout: 'headerless',
+  theme: null,
+  backgroundPattern: false,
+  defaultLayout: null,
   ui: {
     colors: {
       primary: 'green',
