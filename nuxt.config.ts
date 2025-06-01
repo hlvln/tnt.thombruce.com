@@ -7,24 +7,29 @@ export default defineNuxtConfig({
     static: true
   },
   site: {
-    name: 'My Awesome Site',
-    description: 'Where I post all my awesome stuff!',
-    url: 'https://example.com/',
+    name: 'TNT',
+    description: null,
+    url: 'https://tnt.thombruce.com',
     copyright: 'Copyright © All rights reserved',
     ogComponent: 'TntColor',
     og: {
       website: null,
-      color: null,
+      color: '#e7000b',
       image: null,
     }
   },
   routeRules: {
     /* Custom route rules */
+    '/docs': { redirect: '/docs/getting-started/installation' },
+    '/docs/getting-started': { redirect: '/docs/getting-started/installation' },
   },
   runtimeConfig: {
     public: {
       collections: [
         /* Custom content collections */
+        'blog',
+        'docs',
+        'testimonials',
       ],
     },
   },
@@ -52,7 +57,16 @@ export default defineNuxtConfig({
       markdown: {
         highlight: {
           langs: [
-            /* Add your own languages if you want to support code highlighting in documents */
+            'bash',
+            'html',
+            'md',
+            'mdc',
+            'css',
+            'json',
+            'yaml',
+            'js',
+            'ts',
+            'vue',
           ]
         },
       }

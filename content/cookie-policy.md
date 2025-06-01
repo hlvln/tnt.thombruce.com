@@ -6,9 +6,9 @@ layout: article
 navigation:
   title: Cookies
 # Company Details
-companyName: My Company # Required
-website: www.example.com # Required
-email: john@example.com # Required
+companyName: TNT # Required
+website: tnt.thombruce.com # Required
+email: thom@thombruce.com # Required
 address: # Optional
 telephone: # Optional
 ---
